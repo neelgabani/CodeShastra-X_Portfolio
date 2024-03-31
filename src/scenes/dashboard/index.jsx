@@ -15,7 +15,8 @@ const Dashboard = () => {
     { id: 'META', name: 'Meta', value: 151.74, change: '-4.44' },
     { id: 'TSLA', name: 'Tesla Inc', value: 177.90, change: '+17.63' },
     { id: 'AAPL', name: 'Apple Inc', value: 145.93, change: '+23.41' },
-    { id: 'AMD', name: 'Advanced Micro Devices', value: 75.40, change: '+1.50' }
+    { id: 'AMD', name: 'Advanced Micro Devices', value: 75.40, change: '+1.50' },
+    // { id: 'MSPL', name: 'Mahindra services Pvt Limited', value: 15.40, change: '-1.50' }
   ];
 
   const StockCard = ({ id, name, value, change }) => {
