@@ -80,7 +80,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  <b>CODE X</b>
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -92,13 +92,13 @@ const Sidebar = () => {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
-                <img
+                {/* <img
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src={`/Users/neelgabani/Desktop/Portfolio/src/assests/user.`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
+                /> */}
               </Box>
               <Box textAlign="center">
                 <Typography
@@ -107,7 +107,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Aryan Shukla
+                  Jeel Doshi
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   Investor
@@ -125,13 +125,6 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              {/* Data */}
-            </Typography>
             <Item
               title="Stock"
               to="/team"
@@ -153,14 +146,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              {/* Pages */}
-            </Typography>
+            <Item
+              title="Strategies"
+              to="/strategy"
+              icon={<ReceiptOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
             <Item
               title="Add Balance"
               to="/form"
@@ -187,21 +179,21 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              // title="Pie Chart"
-              to="/pie"
+              // title="FAQ Page"
+              to="/faq"
               // icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              // title="FAQ Page"
-              to="/line"
-              // icon={<TimelineOutlinedIcon />}
+              title="Help and Support"
+              to="/faq"
+              icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Help and Support"
+              title="Logout"
               to="/faq"
               icon={<MapOutlinedIcon />}
               selected={selected}
